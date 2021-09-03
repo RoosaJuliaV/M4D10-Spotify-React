@@ -6,11 +6,12 @@
     min-height: 100vh !important;
     background-color: black;
     max-height: 1000px;
+    max-width: 220px;
     z-index: 1;
   }
   #sidebar-wrapper {
     min-height: 100vh !important;
-    width: 100vw;
+    width: 80vw;
     margin-left: -1rem;
   }
   #sidebar-wrapper .sidebar-heading {
