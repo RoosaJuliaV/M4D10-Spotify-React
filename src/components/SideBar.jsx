@@ -18,7 +18,7 @@ const Side = props => {
                 <img
                 alt=""
                 src="https://logosmarken.com/wp-content/uploads/2020/09/Spotify-Logo.png"
-                width="150"
+                width="120"
                 height="auto"
                 className="d-inline-block align-top mt-3 mb-3"
             />
@@ -94,7 +94,7 @@ const Side = props => {
         </>
         )
   }
-  
+
   const SideBar = withRouter(Side)
 
   export default SideBar
