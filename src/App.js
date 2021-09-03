@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css"
+import "./App.css"
+import Home from './pages/Home';
+import Album from './pages/Album';
+import Artist from './pages/Artist';
+import SideBar from "./components/SideBar"
+import Footer from './components/Footer'
+import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Router>
+    <div>
+      <SideBar title="Spotify" color="dark" />
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/album" exact component={Album} />
+        <Route path="/artist" exact component={Artist} />
+      </Switch>
+      <Footer />
     </div>
-  );
+    </Router>
+  )
 }
 
-export default App;
+export default App
