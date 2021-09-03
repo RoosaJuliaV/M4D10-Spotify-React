@@ -1,11 +1,16 @@
 import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+
 
 const Artist = () => {
   return (
-    <div>
-      <h1>Artist</h1>
-    </div>
-  );
+    <Container>
+      <Row>
+          <Col>
+          </Col>
+      </Row>
+    </Container>
+  )
 }
 
-export default Artist;
+export default Artist

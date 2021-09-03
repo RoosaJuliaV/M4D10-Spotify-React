@@ -3,6 +3,7 @@ import {Nav} from "react-bootstrap";
 import { withRouter } from "react-router";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faPlusSquare, faSearch, faStream, faHeart } from '@fortawesome/free-solid-svg-icons'
+import "../components/SideBar.css"
 
 
 const Side = props => {
@@ -91,7 +92,9 @@ const Side = props => {
             </div>
             </Nav>
         </>
-        );
-  };
-  const SideBar = withRouter(Side);
+        )
+  }
+  
+  const SideBar = withRouter(Side)
+
   export default SideBar
