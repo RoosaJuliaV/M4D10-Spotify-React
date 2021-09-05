@@ -29,7 +29,7 @@ export default class RecentlyPlayed extends Component {
     
     render() {
         return (
-            <div className="mb-5 mr-4 ml-2">
+            <div className="mb-5 mr-5 ml-5">
                 <h2 className="text-white mt-5">Recently Played</h2>
                 <Row>
                     {this.state.data && this.state.data.map(item => {

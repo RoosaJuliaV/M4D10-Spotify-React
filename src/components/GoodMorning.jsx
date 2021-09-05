@@ -38,11 +38,11 @@ const GoodMorning = ({ artistName }) => {
   return (
     <Container>
       <Link id="artistLink" to="/Artist">
-        <h2>{artistName}</h2>
+        <h2 className="mt-5">{artistName}</h2>
       </Link>
       <Row className="row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5">
         {albumsArray.map((songObj) => (
-          <Col className="px-0" key={songObj.id}>
+             <Col className="px-0" key={songObj.id}>
             <SmallCard songObj={songObj} />
           </Col>
         ))}
