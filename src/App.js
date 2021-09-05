@@ -5,23 +5,17 @@ import Album from './pages/Album';
 import Artist from './pages/Artist';
 import SideBar from "./components/SideBar"
 import Footer from './components/Footer'
-import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
-
+import { BrowserRouter as Router, Route} from "react-router-dom";
 
 
 function App() {
   return (
     <Router>
-    <div
-    >
-      <SideBar title="Spotify" color="dark" />
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/album" exact component={Album} />
-        <Route path="/artist" exact component={Artist} />
-      </Switch>
-      <Footer />
-    </div>
+      <Route exact path='/' component={Home} />
+      <Route path='/' component={SideBar} />
+      <Route path='/' component={Footer} />
+      <Route exact path="/album/:id" component={Album} />
+      <Route exact path='/artist/:id' component={Artist} />
     </Router>
   )
 }

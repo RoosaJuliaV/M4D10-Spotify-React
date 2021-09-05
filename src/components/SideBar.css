@@ -9,6 +9,7 @@
     max-width: 220px;
     z-index: 1;
   }
+  
   #sidebar-wrapper {
     min-height: 100vh !important;
     width: 80vw;
@@ -34,19 +35,4 @@
     max-height: 400px;
   }
   
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: #000000;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: #555;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: #888;
-  }
   

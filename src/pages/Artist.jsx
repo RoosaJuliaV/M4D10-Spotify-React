@@ -1,15 +1,10 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-
 
 const Artist = () => {
   return (
-    <Container>
-      <Row>
-          <Col>
-          </Col>
-      </Row>
-    </Container>
+    <div>
+      <h2>Artist</h2>
+    </div>
   )
 }
 

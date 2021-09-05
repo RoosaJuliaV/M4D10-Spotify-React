@@ -1,17 +1,17 @@
 import React from "react";
-import { Row, Col, Container } from "react-bootstrap";
+import RecentlyPlayed from "../components/RecentlyPlayed";
+import { Col } from "react-bootstrap";
+import GoodMorning from "../components/GoodMorning";
+
 
 const Home = () => {
-  return (
-      <Container>
-    <Col>
-        <Row />
-    </Col>
-    </Container>
-  )
-}
-
-export default Home
-
-
-
+    return (
+      <>
+        <GoodMorning artistName="Grimes" />
+        <RecentlyPlayed />
+      </>
+    )
+  }
+  
+  export default Home
+  
