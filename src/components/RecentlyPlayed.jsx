@@ -1,6 +1,7 @@
 import { Component } from "react"
-import LargeCard from "./LargeCard";
+import LargeCard from "./LargeCard"
 import { Row } from "react-bootstrap"
+  
 
 export default class RecentlyPlayed extends Component {
     constructor(props) {
@@ -40,3 +41,4 @@ export default class RecentlyPlayed extends Component {
         )
     }
 }
+

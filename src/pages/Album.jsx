@@ -55,7 +55,7 @@ const Album = ({ match }) => {
             <tbody>
               {trackArray.map((track) => (
                 <tr>
-                  <td className="align-middle">1</td>
+                  <td className="align-middle">{track.number}</td>
                   <td>
                     <div className="albumSong">
                       <strong>{track.title}</strong>

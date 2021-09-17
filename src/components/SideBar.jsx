@@ -13,7 +13,6 @@ const Side = props => {
         <>
             <Nav className="pl-3 col-md-2 d-none d-md-block sidebar"
             activeKey="/home"
-            onSelect={selectedKey => alert(`selected ${selectedKey}`)}
             >
                 <img
                 alt=""
@@ -24,7 +23,7 @@ const Side = props => {
             />
                 <div className="sidebar-sticky"></div>
             <Nav.Item>
-                <Nav.Link id="navText" href="/home"><FontAwesomeIcon icon={faHome} /> Home</Nav.Link>
+                <Nav.Link id="navText" href="/"><FontAwesomeIcon icon={faHome} /> Home</Nav.Link>
             </Nav.Item>
             <Nav.Item>
                 <Nav.Link id="navText" eventKey="link-2"><FontAwesomeIcon icon={faSearch} /> Search</Nav.Link>
